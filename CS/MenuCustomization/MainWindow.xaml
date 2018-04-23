@@ -1,0 +1,29 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+        xmlns:dxsps="http://schemas.devexpress.com/winfx/2008/xaml/spreadsheet"
+        xmlns:c="clr-namespace:MenuCustomization"
+        x:Class="MenuCustomization.MainWindow"
+        Title="MainWindow" Height="600" Width="800">
+    
+    
+    <Grid>
+        <!--region #PopupMenuShowing-->
+        <dxsps:SpreadsheetControl Name="spreadsheetControl" PopupMenuShowing="SpreadsheetControl_PopupMenuShowing">
+        <!--endregion #PopupMenuShowing-->
+        <!--region #PopupMenuCustomization-->
+            <dxsps:SpreadsheetControl.MenuCustomizations>
+                <dxsps:SpreadsheetMenuCustomization>
+                    <dxb:BarCheckItem Name="customCheckItem" 
+                                  Content="Custom Check Item" 
+                                  IsChecked="True" 
+                                  dxb:BarItemLinkActionBase.ItemLinkIndex="0" 
+                                  CheckedChanged="customCheckItem_CheckedChanged" />
+                </dxsps:SpreadsheetMenuCustomization>                
+            </dxsps:SpreadsheetControl.MenuCustomizations>
+        <!--endregion #PopupMenuCustomization-->
+        </dxsps:SpreadsheetControl>
+
+    </Grid>
+</Window>
