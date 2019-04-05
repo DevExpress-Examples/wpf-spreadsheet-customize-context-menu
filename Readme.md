@@ -2,7 +2,7 @@
 *Files to look at*:
 
 * [MainWindow.xaml](./CS/MenuCustomization/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/MenuCustomization/MainWindow.xaml))
-* [MainWindow.xaml.cs](./CS/MenuCustomization/MainWindow.xaml.cs) (VB: [MainWindow.xaml](./VB/MenuCustomization/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/MenuCustomization/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/MenuCustomization/MainWindow.xaml.vb))
 <!-- default file list end -->
 # How to customize the popup menu of the WPF Spreadsheet control
 
