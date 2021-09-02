@@ -6,7 +6,7 @@
     xmlns:dxsps="http://schemas.devexpress.com/winfx/2008/xaml/spreadsheet"
     xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
     xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
-    xmlns:dxspscore="clr-namespace:DevExpress.XtraSpreadsheet.Commands;assembly=DevExpress.Spreadsheet.v15.2.Core"
+    xmlns:dxspscore="clr-namespace:DevExpress.XtraSpreadsheet.Commands;assembly=DevExpress.Spreadsheet.v21.1.Core"
     xmlns:local="clr-namespace:MenuCustomization"
     Height="400"
     Width="800"
