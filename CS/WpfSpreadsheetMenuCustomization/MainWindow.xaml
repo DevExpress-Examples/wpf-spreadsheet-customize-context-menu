@@ -1,0 +1,42 @@
+﻿<dx:ThemedWindow x:Class="WpfSpreadsheetMenuCustomization.MainWindow" mc:Ignorable="d" 
+                 Title="Spreadsheet" Height="450" Width="800"
+    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:WpfSpreadsheetMenuCustomization"
+    xmlns:dxsps="http://schemas.devexpress.com/winfx/2008/xaml/spreadsheet" 
+    xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars">
+    <Grid>
+        <dxsps:SpreadsheetControl x:Name="spreadsheetControl">
+            <dxsps:SpreadsheetControl.MenuCustomizations>
+                <dxsps:SpreadsheetMenuCustomization MenuType="Cell">
+                    <!--Add a separator after the first three menu items.-->
+                    <dxb:InsertAction Index="3">
+                        <dxb:BarItemSeparator />
+                    </dxb:InsertAction>
+                    <!--Insert a custom menu item under the separator
+                    to highlight selected cells.-->
+                    <dxb:InsertAction Index="4">
+                        <dxb:BarButtonItem Content="Highlight Cells" 
+                                           ItemClick="HighlightCells_ItemClick" />
+                    </dxb:InsertAction>
+                    <!--Append a new item to the end of the context menu
+                    and bind this item to the spreadsheet command.-->
+                    <dxb:BarButtonItem Command="{Binding RelativeSource={RelativeSource Self}, Mode=OneWay, 
+                        Path=(dxsps:SpreadsheetControl.Spreadsheet).CommandProvider.MergeAndCenterCells}" 
+                        Content="Merge Cells" />
+                    <!--Change the Copy item's content.-->
+                    <dxb:UpdateAction ElementName="{x:Static dxsps:DefaultBarItemNames.PopupMenuItem_Copy}" 
+                                      PropertyName="Content" 
+                                      Value="Copy Cells" />
+                    <!--Remove the Insert Comment item from the menu.-->
+                    <dxb:RemoveAction ElementName="{x:Static dxsps:DefaultBarItemNames.PopupMenuItem_InsertComment}" />
+                    <!--Remove the Hyperlink item from the menu.-->
+                    <dxb:RemoveAction ElementName="{x:Static dxsps:DefaultBarItemNames.PopupMenuItem_InsertHyperlink}" />
+                </dxsps:SpreadsheetMenuCustomization>
+            </dxsps:SpreadsheetControl.MenuCustomizations>
+        </dxsps:SpreadsheetControl>
+    </Grid>
+</dx:ThemedWindow>

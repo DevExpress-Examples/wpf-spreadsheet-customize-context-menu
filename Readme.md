@@ -3,17 +3,17 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E5147)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
+# WPF Spreadsheet - How to Customize Context Menus 
 
-* [MainWindow.xaml](./CS/MenuCustomization/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/MenuCustomization/MainWindow.xaml))
-* [MainWindow.xaml.cs](./CS/MenuCustomization/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/MenuCustomization/MainWindow.xaml.vb))
-<!-- default file list end -->
-# How to customize the popup menu of the WPF Spreadsheet control
+This example demonstrates how to customize the [Cell](https://docs.devexpress.com/WPF/119005/controls-and-libraries/spreadsheet/visual-elements/pop-up-menus) context menu of the WPF Spreadsheet control.
 
+![Custom context menu for the Spreadsheet control](./media/spreadsheet-custom-menu.png)
 
-<p>The following example illustrates how to customize the Spreadsheet control popup menus by removing existing menu items and adding new items.<br>In XAML, add new <a href="http://help.devexpress.com/#WPF/clsDevExpressXpfBarsBarItemtopic">BarItem elements</a> and <a href="http://help.devexpress.com/#WPF/clsDevExpressXpfBarsRemoveBarItemAndLinkActiontopic">RemoveBarItemAndLinkAction</a> actions to the <a href="http://help.devexpress.com/#WPF/clsDevExpressXpfSpreadsheetMenuSpreadsheetMenuCustomizationtopic">SpreadsheetMenuCustomization</a> object contained in the <a href="http://help.devexpress.com/#WPF/DevExpressXpfSpreadsheetSpreadsheetControl_MenuCustomizationstopic">SpreadsheetControl.MenuCustomizations</a> collection.<br>At runtime, handle the <a href="http://help.devexpress.com/#WPF/DevExpressXpfSpreadsheetSpreadsheetControl_PopupMenuShowingtopic">PopupMenuShowing</a> event and add new <a href="http://help.devexpress.com/#WPF/clsDevExpressXpfBarsBarItemtopic">BarItem elements</a> and <a href="http://help.devexpress.com/#WPF/clsDevExpressXpfBarsRemoveBarItemAndLinkActiontopic">RemoveBarItemAndLinkAction</a> actions to the <a href="http://help.devexpress.com/#WPF/DevExpressXpfSpreadsheetMenuPopupMenuShowingEventArgs_Customizationstopic">e.Customizations</a> collection.<br><br><img src="https://raw.githubusercontent.com/DevExpress-Examples/how-to-customize-the-popup-menu-of-the-wpf-spreadsheet-control-e5147/15.2.4+/media/fbd0f7df-38f2-4d1d-82ef-a662af9ac426.png"></p>
+Add the required [bar actions](https://docs.devexpress.com/WPF/7045/controls-and-libraries/ribbon-bars-and-menu/bars/bar-actions) to the [SpreadsheetControl.MenuCustomizations](https://docs.devexpress.com/WPF/DevExpress.Xpf.Spreadsheet.SpreadsheetControl.MenuCustomizations) collection to create, modify or remove menu items.
 
-<br/>
+## Files to Look At
+
+* [MainWindow.xaml](./CS/WpfSpreadsheetMenuCustomization/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/WpfSpreadsheetMenuCustomization/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/WpfSpreadsheetMenuCustomization/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/WpfSpreadsheetMenuCustomization/MainWindow.xaml.vb))
 
 
