@@ -15,5 +15,3 @@ Add the required [bar actions](https://docs.devexpress.com/WPF/7045/controls-and
 
 * [MainWindow.xaml](./CS/WpfSpreadsheetMenuCustomization/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/WpfSpreadsheetMenuCustomization/MainWindow.xaml))
 * [MainWindow.xaml.cs](./CS/WpfSpreadsheetMenuCustomization/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/WpfSpreadsheetMenuCustomization/MainWindow.xaml.vb))
-
-
