@@ -11,6 +11,10 @@ This example demonstrates how to customize the [Cell](https://docs.devexpress.co
 
 Add the required [bar actions](https://docs.devexpress.com/WPF/7045/controls-and-libraries/ribbon-bars-and-menu/bars/bar-actions) to the [SpreadsheetControl.MenuCustomizations](https://docs.devexpress.com/WPF/DevExpress.Xpf.Spreadsheet.SpreadsheetControl.MenuCustomizations) collection to create, modify or remove menu items.
 
+## Documentation
+
+Refer to the following help topic for implementation details: [Customize the Spreadsheet Context Menus](https://docs.devexpress.com/WPF/119038/controls-and-libraries/spreadsheet/getting-started/customize-the-spreadsheet-context-menus).
+
 ## Files to Look At
 
 * [MainWindow.xaml](./CS/WpfSpreadsheetMenuCustomization/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/WpfSpreadsheetMenuCustomization/MainWindow.xaml))
