@@ -1,3 +1,5 @@
+Imports System.Linq
+
 Namespace WpfSpreadsheetMenuCustomization
 
     ''' <summary>
@@ -7,14 +9,14 @@ Namespace WpfSpreadsheetMenuCustomization
         Inherits DevExpress.Xpf.Core.ThemedWindow
 
         Public Sub New()
-            Me.InitializeComponent()
-            Me.spreadsheetControl.ActiveWorksheet.Cells("B2").Value = "Right-click a cell to display the custom context menu"
+            InitializeComponent()
+            spreadsheetControl.ActiveWorksheet.Cells("B2").Value = "Right-click a cell to display the custom context menu"
         End Sub
 
 #Region "HighlightCells"
         Private Sub HighlightCells_ItemClick(ByVal sender As Object, ByVal e As DevExpress.Xpf.Bars.ItemClickEventArgs)
             ' Fill selected cells with the yellow color. 
-            Me.spreadsheetControl.Selection.FillColor = System.Drawing.Color.Yellow
+            spreadsheetControl.Selection.FillColor = System.Drawing.Color.Yellow
         End Sub
 #End Region
     End Class
