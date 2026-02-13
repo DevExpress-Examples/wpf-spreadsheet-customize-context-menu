@@ -21,7 +21,7 @@ Refer to the following help topic for implementation details: [Customize the Spr
 * [MainWindow.xaml](./CS/WpfSpreadsheetMenuCustomization/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/WpfSpreadsheetMenuCustomization/MainWindow.xaml))
 * [MainWindow.xaml.cs](./CS/WpfSpreadsheetMenuCustomization/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/WpfSpreadsheetMenuCustomization/MainWindow.xaml.vb))
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-spreadsheet-customize-context-menu&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-spreadsheet-customize-context-menu&~~~was_helpful=no)
 
