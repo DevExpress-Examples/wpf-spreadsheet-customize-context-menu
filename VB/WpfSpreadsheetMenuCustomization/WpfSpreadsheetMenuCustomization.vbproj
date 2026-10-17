@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net10.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <EnableDefaultApplicationDefinition>false</EnableDefaultApplicationDefinition>
@@ -12,7 +12,7 @@
     <ApplicationDefinition Include="App.xaml" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="DevExpress.Wpf.Spreadsheet" Version="24.2.1-alpha-24207" />
+    <PackageReference Include="DevExpress.Wpf.Spreadsheet" Version="26.1.5" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
